@@ -1,7 +1,7 @@
 
 // calculator_test.cpp
 #include "CppUTest/TestHarness.h"
-#include "calculator.cpp"
+#include "src/calculator.cpp"
 
 TEST_GROUP(Calculator) {
     Calculator calc;
