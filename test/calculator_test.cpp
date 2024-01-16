@@ -1,6 +1,6 @@
 
 // calculator_test.cpp
-#include "../CppUTest/src/CppUTest/TestHarness.cpp"
+#include "../CppUTest/src/CppUTest/TestHarness.h"
 
 #include "../src/calculator.cpp"
 
