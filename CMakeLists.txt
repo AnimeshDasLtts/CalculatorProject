@@ -5,7 +5,7 @@ project(CalculatorTests)
 
 # Include directories for CppUTest headers
 include_directories(~/var/lib/jenkins/workspace/animeshTest/CppUTest/include)
-set(CMAKE_CURRENT_SOURCE_DIR "~var/lib/jenkins/workspace/calculatorPipeline")
+set(CMAKE_CURRENT_SOURCE_DIR "~/var/lib/jenkins/workspace/calculatorPipeline/")
 # Add the CppUTest library
 add_library(CppUTest STATIC CppUTest/src/CppUTest/TestHarness.cpp)
 
