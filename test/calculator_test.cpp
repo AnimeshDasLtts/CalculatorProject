@@ -1,6 +1,6 @@
 
 // calculator_test.cpp
-#include "/var/lib/jenkins/workspace/animeshTest/cpputest/src/CppUTest/TestHarness_c.cpp"
+#include "../CppUTest/src/CppUTest/TestHarness.h"
 
 #include "../src/calculator.cpp"
 
