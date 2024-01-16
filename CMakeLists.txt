@@ -7,7 +7,7 @@ project(CalculatorTests)
 include_directories(${CPPUTEST_HOME}/cpputest/include)
 #set(CMAKE_CURRENT_SOURCE_DIR "var/lib/jenkins/workspace/calculatorPipeline")
 # Add the CppUTest library
-##add_library(CppUTest STATIC CppUTest/src/CppUTest/TestHarness.h)
+#add_library(CppUTest STATIC CppUTest/TestHarness.h)
 
 # Add the executable target for the calculator tests
 add_executable(calculator_tests 
@@ -16,7 +16,7 @@ add_executable(calculator_tests
 )
 
 # Link the CppUTest library with the calculator tests target
-target_link_libraries(calculator_tests CppUTest)
+target_link_libraries(calculator_tests PRIVATE CppUTest)
 
 # Enable CppUTest's automatic discovery of tests
 add_test(NAME calculator_tests COMMAND calculator_tests)
