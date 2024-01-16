@@ -1,6 +1,7 @@
 
 // calculator_test.cpp
-#include "CppUTest/TestHarness.h"
+#include "/var/lib/jenkins/workspace/animeshTest/cpputest/src/CppUTest/TestHarness_c.cpp"
+
 #include "../src/calculator.cpp"
 
 TEST_GROUP(Calculator) {
