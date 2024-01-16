@@ -7,7 +7,7 @@ project(CalculatorTests)
 include_directories(${CPPUTEST_HOME}/cpputest/include)
 #set(CMAKE_CURRENT_SOURCE_DIR "var/lib/jenkins/workspace/calculatorPipeline")
 # Add the CppUTest library
-add_library(CppUTest STATIC CppUTest/src/CppUTest/TestHarness.cpp)
+add_library(CppUTest STATIC CppUTest/src/CppUTest/TestHarness.h)
 
 # Add the executable target for the calculator tests
 add_executable(calculator_tests 
