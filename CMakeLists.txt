@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.10)
 project(CalculatorTests)
 
 # Include directories for CppUTest headers
-include_directories({CMAKE_CURRENT_SOURCE_DIR}/CppUTest/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/CppUTest/include)
 #set(CMAKE_CURRENT_SOURCE_DIR "var/lib/jenkins/workspace/calculatorPipeline")
 # Add the CppUTest library
 add_library(CppUTest STATIC CppUTest/src/CppUTest/TestHarness.cpp)
