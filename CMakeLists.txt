@@ -10,11 +10,17 @@ include_directories(${CPPUTEST_HOME}/cpputest/include)
 #add_library(CppUTest STATIC CppUTest/TestHarness.h)
 
 # Add the executable target for the calculator tests
-add_executable(calculator_tests ${CMAKE_CURRENT_SOURCE_DIR}/test/calculator_test.cpp
+add_executable(calculator 
+              ${CMAKE_CURRENT_SOURCE_DIR}/src/calculator.cpp
+)
+
+add_executables(calculator_test 
+                            ${CMAKE_CURRENT_SOURCE_DIR}/test/calculator_test.cpp
+                            ${CMAKE_CURRENT_SOURCE_DIR}/TestHarness.cpp 
 )
 
 # Link the CppUTest library with the calculator tests target
-#target_link_libraries(calculator_tests PRIVATE CppUTest)
+target_link_libraries(calculator_tests PRIVATE CppUTest)
 
 # Enable CppUTest's automatic discovery of tests
 add_test(NAME calculator_tests COMMAND calculator_tests)
