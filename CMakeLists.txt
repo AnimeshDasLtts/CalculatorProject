@@ -16,7 +16,7 @@ add_executable(calculator_tests
 )
 
 # Link the CppUTest library with the calculator tests target
-target_link_libraries(calculator_tests PRIVATE CppUTest)
+#target_link_libraries(calculator_tests PRIVATE CppUTest)
 
 # Enable CppUTest's automatic discovery of tests
 add_test(NAME calculator_tests COMMAND calculator_tests)
